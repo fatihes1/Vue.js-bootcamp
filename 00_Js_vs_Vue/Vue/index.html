@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue.js Bootcamp #0</title>
+    <!-- Vue.js CDN -->
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <!-- Vue'nin etki edeceği app id değerine sahip div diğer etikleri kaplamalıdır.-->
+    <div id="app">
+        <!-- Input alanından alınan veri 'todoText' verisine atanıyor -->
+        <input type="text" id="todoText" v-model="todoText">
+        <!-- Butona tıklanında 'addTodo' methodu çağrılıyor -->
+        <button id="addButton" @click="addTodo">Ekle</button>
+        <ul id="todoList">
+            <!-- 'todoList' arrayi (dizisi) içerisinde değer oldukça yazdıracak for döngüsü -->
+            <li v-for="todo in todoList" :key="todo">{{ todo }}</li> <!-- String interpolation ile kolayca yazdırılır-->
+        </ul>
+    </div>
+
+    <!-- app.js dahil edilmesi-->
+    <script src="app.js"></script>
+</body>
+
+</html>
