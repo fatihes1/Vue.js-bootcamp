@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue.js Bootcamp #1</title>
+    <!-- Vue.js CDN & Style Link-->
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="app">
+        <!-- app.js içindeki data() alanından gelen değerler -->
+        <h1>{{ title }}</h1>
+        <p>{{ content }}</p>
+        <!-- Özellikleri (attr.) vue ile bağlanması -->
+        <!-- Aksi takdirde string interpolation ile attribute değerleri verilemez-->
+        <a :href="url" :target="es.target" v-bind:alt="es.alt" v-bind:es="owner"> {{ es.title }} </a>
+        <br>
+        <br>
+        <!-- click event'i (olayı) olduğunda çalıştırılacak işlev ataması -->
+        <button v-on:click="changeTitle('Birinci butona tıkladınız.')">Title Değiştir</button>
+        <button v-on:click="changeTitle('İkinci butona tıkladınız.')">Title_2 Değiştir</button>
+        <!-- Mouse imleci belirtilen alanın üzerinde iken ve tıklandığında çalışacak işlevler -->
+        <div @mousemove="updateCoords('mouseMove', $event)" class="box" @click="changeTitle('Kutuya tıkladınız.')">
+            <span>{{ coords.x }}, {{ coords.y }}</span>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
