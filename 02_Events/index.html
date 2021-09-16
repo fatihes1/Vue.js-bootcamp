@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue.js Bootcamp #1</title>
+    <!-- Vue.js CDN & Style Link-->
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="app">
+        <div class="col-4 ofset-4">
+            <h3 class="text-center">Event</h3>
+            <!-- Kullanıcıdan alınacak input değerine yazdırmak için $event.target.value kullanılması -->
+            <!-- <input type="text" v-on:input="" class="form-control" >
+            <input type="text" @input="fullName = $event.target.value" :value="fullName" class="form-control"> -->
+
+            <!-- target değeri yerine vue tarafından v-model ile girdi değerinin alınması -->
+            <input type="text" v-model="fullName" class="form-control">
+            <br>
+            <!-- string interpolation ile yazdırılması -->
+            {{ fullName }}
+            <br />
+            <button class="btn btn-sm btn-primary">Ekle</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue.js Bootcamp #1</title>
+    <!-- Vue.js CDN & Style Link-->
+    <script src="https://unpkg.com/vue@next"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="app" class="container">
+        <!-- ilk sayacın tanımlanması -->
+        <div class="row mt-5">
+            <div class="col-2 card p-2 me-2">
+                <!-- sayaç değeri (string interpolation) -->
+                <h3 class="text-center">{{ counter }}</h3>
+                <div class="d-flex justify-content-center align-items-center">
+                    <!-- arttırma ve azaltma için atanan butonlar ve tıklanınca yapılacak işlev
+              bu işlevler app.js de tanımlanabilirdi -->
+                    <button @click="counter++" class="btn me-2 btn-sm btn-primary">+</button>
+                    <button @click="counter--" class="btn btn-sm btn-danger">-</button>
+                </div>
+                <!-- sayaç değerine göre if else şartı olan işlev (app.js içerisinde tanımlı) -->
+                <div class="alert alert-info mt-2">{{ getCounterResult }}</div>
+            </div>
+
+            <!-- ilk sayacın tanımlanması -->
+            <div class="col-2 card p-2">
+                <!-- sayaç değeri (string interpolation) -->
+                <h3 class="text-center">{{ counter2 }}</h3>
+                <div class="d-flex justify-content-center align-items-center">
+                    <!-- arttırma ve azaltma için atanan butonlar ve tıklanınca yapılacak işlev
+              bu işlevler app.js de tanımlanabilirdi -->
+                    <button @click="counter2++" class="btn me-2 btn-sm btn-primary">+</button>
+                    <button @click="counter2--" class="btn btn-sm btn-danger">-</button>
+                </div>
+                <!-- sayaç değerine göre if else şartı olan işlev (app.js içerisinde tanımlı) -->
+
+                <div class="alert alert-info mt-2">{{ getCounter2Result }}</div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
