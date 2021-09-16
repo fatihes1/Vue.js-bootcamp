@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue.js Bootcamp #1</title>
+    <!-- Vue.js CDN & Style Link -->
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="app">
+        <!-- Box alanının renginin belirlenebileceği bir input alanı -->
+        <input type="text" v-model="bgColor" placeholder="Bir renk adı veya kodu yazınız." />
+        <!-- Tıklandığında box alanında border ekleyecek işlevi çağıran buton -->
+        <button @click="showBorder = !showBorder">Border Ekle/Ekleme</button>
+        Tıklandığında box alanında bg color olarak red atayacak işlevi çağıran buton
+        <button @click="redBG = !redBG">Kırmızı BG Yap.</button>
+        <!-- Box alanı divi ve style ve class için binding işlemleri -->
+        <div class="box" :style="{ backgroundColor : bgColor }" :class="boxClasses"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
