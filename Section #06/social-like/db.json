@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "username": "dsadsa",
+      "fullname": "sadsad",
+      "password": "U2FsdGVkX1/wAGcNiot6Z+CmhvRgU8nWEkUrm3Cpc10=",
+      "id": 1
+    },
+    {
+      "username": "esjr",
+      "fullname": "Fatih Es",
+      "password": "U2FsdGVkX18h0HM2C2e8ksxDzqLnNER3HAutCYiEN3I=",
+      "id": 2
+    }
+  ],
+  "bookmarks": [],
+  "categories": []
+}
