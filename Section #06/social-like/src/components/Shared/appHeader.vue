@@ -9,7 +9,7 @@
           BookLike
         </div>
 
-        <div class="ml-auto flex items-center">
+        <div v-if="_isAuthenticated" class="ml-auto flex items-center">
           <router-link :to="{ name : 'NewBookmarkPage' }" class="flex bg-gray-700 hover:bg-black text-white px-3 py-1 rounded-sm text-sm items-center mr-2">
             <svg xmlns="http://www.w3.org/2000/svg" class="fill-current" height="16" viewBox="0 0 24 24" width="16">
               <path d="M0 0h24v24H0V0z" fill="none" />
@@ -39,7 +39,7 @@
                 </svg>
                 Favorites</a
               >
-              <a href="#" class="menu-item">
+              <a @click="onLogout" href="#" class="menu-item">
                 <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" class="fill-current mr-1" height="24" viewBox="0 0 24 24" width="24">
                   <g><path d="M0,0h24v24H0V0z" fill="none" /></g>
                   <g><path d="M17,8l-1.41,1.41L17.17,11H9v2h8.17l-1.58,1.58L17,16l4-4L17,8z M5,5h7V3H5C3.9,3,3,3.9,3,5v14c0,1.1,0.9,2,2,2h7v-2H5V5z" /></g>
@@ -52,3 +52,17 @@
       </nav>
     </div>
 </template>
+<script>
+import {mapGetters}  from "vuex";
+export default {
+  computed : {
+    ...mapGetters(["_isAuthenticated"])
+  },
+  methods : {
+    onLogout(){
+      this.$store.commit("logoutUser");
+      this.$router.push({ name : "LoginPage" });
+    }
+  }
+}
+</script>

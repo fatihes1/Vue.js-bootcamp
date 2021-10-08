@@ -11,6 +11,12 @@
       "fullname": "Fatih Es",
       "password": "U2FsdGVkX18h0HM2C2e8ksxDzqLnNER3HAutCYiEN3I=",
       "id": 2
+    },
+    {
+      "username": "test",
+      "fullname": "test",
+      "password": "f78ab6170659ff3125a7048cacafa4a86c38d8ad",
+      "id": 3
     }
   ],
   "bookmarks": [],
