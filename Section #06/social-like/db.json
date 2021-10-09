@@ -17,6 +17,12 @@
       "fullname": "test",
       "password": "f78ab6170659ff3125a7048cacafa4a86c38d8ad",
       "id": 3
+    },
+    {
+      "username": "esjr",
+      "fullname": "Fatih Es",
+      "password": "0fdb7e39d0d1ff2c112a900c96318b956f8b2ee9",
+      "id": 4
     }
   ],
   "user_likes": [
@@ -29,9 +35,50 @@
       "userID": 3,
       "bookmarkId": 12,
       "id": 2
+    },
+    {
+      "userId": 4,
+      "bookmarkId": 13,
+      "id": 3
+    },
+    {
+      "userId": 4,
+      "bookmarkId": 14,
+      "id": 4
+    },
+    {
+      "userId": 4,
+      "bookmarkId": 13,
+      "id": 5
+    },
+    {
+      "userId": 4,
+      "bookmarkId": 12,
+      "id": 6
+    },
+    {
+      "userId": 4,
+      "bookmarkId": 14,
+      "id": 7
     }
   ],
-  "user_bookmarks": [],
+  "user_bookmarks": [
+    {
+      "userId": 4,
+      "bookmarkId": 15,
+      "id": 1
+    },
+    {
+      "userId": 4,
+      "bookmarkId": 14,
+      "id": 2
+    },
+    {
+      "userId": 4,
+      "bookmarkId": 13,
+      "id": 3
+    }
+  ],
   "bookmarks": [
     {
       "title": "Vue.js",
@@ -59,6 +106,15 @@
       "userId": 3,
       "created_at": "2021-10-09T11:17:25.185Z",
       "id": 14
+    },
+    {
+      "title": "Vue3 Resmi Belge",
+      "url": "https://v3.vuejs.org/guide/introduction.html",
+      "categoryId": 4,
+      "description": "Faydalanılması gereken bir website",
+      "userId": 4,
+      "created_at": "2021-10-09T19:14:49.314Z",
+      "id": 15
     }
   ],
   "categories": [

@@ -30,7 +30,7 @@ export default {
     }
   },
   mounted() {
-    this.$appAxios.get("/categories").then(category_response => {
+      this.$appAxios.get("/categories").then(category_response => {
       this.categoryList = category_response?.data || []
     })
   },
@@ -45,7 +45,13 @@ export default {
       this.$appAxios.post("/bookmarks", saveData).then(save_bookmark_response => {
         console.log(save_bookmark_response);
         // Ekleme işleminden sonra verileri null olarak atama yapılır
-        Object.keys(this.userData)?.forEach(field => this.userData[field] = null)
+        Object.keys(this.userData)?.forEach(field => this.userData[field] = null);
+        const socketData = {
+          ...save_bookmark_response.data,
+          user: this._getCurrentUser,
+          category: this.categoryList?.find(c => c.id === saveData.categoryId)
+        };
+        this.$socket.emit("NEW_BOOKMARK_EVENT", socketData);
         this.$router.push({ name : "HomePage" })
       })
     }
