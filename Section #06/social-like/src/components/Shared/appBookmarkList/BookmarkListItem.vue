@@ -1,7 +1,7 @@
 <template>
             <div class="bg-white flex flex-col gap-x-3 rounded-md shadow-sm">
             <div class="p-3">
-              <a href="#" class="hover:text-black font-bold text-l mb-1 text-gray-600 text-center">Vue3 Dokümantasyon</a>
+              <a :href="item.url" target="_blank" class="hover:text-black font-bold text-l mb-1 text-gray-600 text-center">{{ item.title || "-" }}</a>
               <div class="flex items-center justify-center mt-2 gap-x-1">
                 <button class="like-btn group">
                   <svg xmlns="http://www.w3.org/2000/svg" class="fill-current group-hover:text-white" height="24" viewBox="0 0 24 24" width="24">
@@ -21,15 +21,36 @@
                       <path d="M0 0h24v24H0V0z" fill="none" />
                       <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17l-.59.59-.58.58V4h16v12zM6 12h2v2H6zm0-3h2v2H6zm0-3h2v2H6zm4 6h5v2h-5zm0-3h8v2h-8zm0-3h8v2h-8z" />
                     </svg>
-                    <p class="details-container">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique nemo consequatur a accusamus assumenda laborum consequuntur explicabo dolor, odit eligendi voluptate illum itaque accusantium, cumque tenetur cupiditate illo libero dolores!</p>
+                    <p class="details-container">
+                      {{ item.description }}  
+                    </p>
                   </button>
                 </div>
               </div>
               <div class="text-xs text-gray-400 mt-2 flex justify-between">
-                <a href="#" class="hover:text-black"> Gökhan Kandemir </a>
+                <a href="#" class="hover:text-black"> {{ userName }} </a>
                 <span>14 Mart</span>
               </div>
             </div>
-            <div class="bg-red-200 p-1 text-red-900 text-center text-sm">Vue.js</div>
+            <div class="bg-red-200 p-1 text-red-900 text-center text-sm">{{ categoryName }}</div>
           </div>
 </template>
+<script>
+export default {
+  props : {
+    item : {
+      type: Object,
+      required : true,
+      default : () => {}
+    }
+  },
+  computed : {
+    categoryName() {
+      return this.item?.category?.name || "-";
+    },
+    userName() {
+      return this.item?.user?.fullname || "-";
+    }
+  }
+}
+</script>

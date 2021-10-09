@@ -19,6 +19,59 @@
       "id": 3
     }
   ],
-  "bookmarks": [],
-  "categories": []
+  "bookmarks": [
+    {
+      "title": "Vue.js",
+      "url": "http:v3.vue.js.com",
+      "categoryId": 4,
+      "description": "Web alanına girişke",
+      "userId": 3,
+      "created_at": "2021-10-09T08:45:28.771Z",
+      "id": 12
+    },
+    {
+      "title": "Yeni versiyon",
+      "url": "https://fatihes1.github.io",
+      "categoryId": 4,
+      "description": "Resume-website",
+      "userId": 3,
+      "created_at": "2021-10-09T10:47:57.878Z",
+      "id": 13
+    },
+    {
+      "title": "Go dili eğitimi",
+      "url": "https:blbbla",
+      "categoryId": 1,
+      "description": "Kubernets ve docker ile devam edecek",
+      "userId": 3,
+      "created_at": "2021-10-09T11:17:25.185Z",
+      "id": 14
+    }
+  ],
+  "categories": [
+    {
+      "name": "DevOps",
+      "id": 1
+    },
+    {
+      "name": "Design Tools",
+      "id": 2
+    },
+    {
+      "name": "Data Science",
+      "id": 3
+    },
+    {
+      "name": "Web Development",
+      "id": 4
+    },
+    {
+      "name": "Security",
+      "id": 5
+    },
+    {
+      "name": "IoT",
+      "id": 6
+    }
+  ]
 }
