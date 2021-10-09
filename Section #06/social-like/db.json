@@ -19,6 +19,19 @@
       "id": 3
     }
   ],
+  "user_likes": [
+    {
+      "userID": 3,
+      "bookmarkId": 12,
+      "id": 1
+    },
+    {
+      "userID": 3,
+      "bookmarkId": 12,
+      "id": 2
+    }
+  ],
+  "user_bookmarks": [],
   "bookmarks": [
     {
       "title": "Vue.js",
