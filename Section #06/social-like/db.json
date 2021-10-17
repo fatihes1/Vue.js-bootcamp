@@ -23,6 +23,12 @@
       "fullname": "Fatih Es",
       "password": "0fdb7e39d0d1ff2c112a900c96318b956f8b2ee9",
       "id": 4
+    },
+    {
+      "username": "Deneme",
+      "fullname": "Deneme Kullanıcı",
+      "password": "6196532d585f5660e6900ab57eeb5ccfec739f47",
+      "id": 5
     }
   ],
   "user_likes": [
@@ -72,11 +78,6 @@
       "userId": 4,
       "bookmarkId": 14,
       "id": 2
-    },
-    {
-      "userId": 4,
-      "bookmarkId": 13,
-      "id": 3
     }
   ],
   "bookmarks": [
