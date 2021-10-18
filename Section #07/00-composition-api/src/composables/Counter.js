@@ -5,7 +5,7 @@ export default function () {
     const oddOrEven = computed(() => (counter.value % 2 == 0 ? 'Çift' : 'Tek'));
 
     watch([counter, oddOrEven], ([newC, newO], [oldC, oldO]) => {
-        console.log(oldO, "=> ", newO );
-    })
-    return {counter, oddOrEven}
+        console.log(oldO, "=>", newO);
+    }); 
+    return { counter, oddOrEven};
 }

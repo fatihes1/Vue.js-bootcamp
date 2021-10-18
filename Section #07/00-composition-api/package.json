@@ -1,5 +1,5 @@
 {
-  "name": "00_composition_api",
+  "name": "00-composition-api",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
@@ -11,7 +11,6 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.9.3",
-    "html-loader": "^2.1.2",
     "vite": "^2.6.4"
   }
 }
