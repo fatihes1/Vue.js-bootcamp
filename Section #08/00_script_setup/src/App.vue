@@ -1,21 +1,42 @@
-<script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + Vite" />
+  <h3>{{ title }}</h3>
+  <input type="text" v-model="title" />
+  <button @click="inc">{{ counter }}</button>
+  <hr />
+  <oddOrEven :counter="counter" @odd-event="alertMe" />
+  <h1>User App</h1>
+  <input type="text" v-model="state.personal.name">
+  <input type="text" v-model="state.personal.lname">
+  {{ state.personal }}
 </template>
 
+<script setup>
+import { ref, reactive, watch } from "vue";
+// ! beforeCreate(), created() ve data() == script setup
+import oddOrEven from "./components/oddOrEven.vue";
+import Utils from "./composables/Utils";
+const { title, counter, inc, alertMe } = Utils();
+
+// ! User App
+const state = reactive({
+  personal: {
+    name: "Fatih",
+    lname: null,
+  },
+  itemList: [],
+});
+// const itemList = ref([]);
+
+watch(
+  () => JSON.parse(JSON.stringify(state.personal)),
+  (newPersonal, oldPersonal) => {
+    console.log(oldPersonal);
+    console.log(newPersonal);
+  }
+)
+
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
