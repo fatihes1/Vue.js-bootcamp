@@ -15,7 +15,7 @@
 - Directives (direktifler) : Bir elementin yapısını, davranışını, biçimini, şeklini değiştirebilen attr. parçasıdır. Tag içerisinde `v-...` olarak kullanılan yapılar direktiflerdir. (Örn: `v-on`, `v-bind`)
 - String interpolation içerisinde tek satır `JavaScript` kodları yazılabilir. Örneğin; `{{ counter > 5 ? "Büyük" : "Küçük" }}, counter data üzerinde tanımlı bir değişken olmalı.`
 
- ![Untitled Diagram drawio](https://user-images.githubusercontent.com/54971670/147419911-ddec0252-2cf4-4912-b886-a2e4b22562b2.png)
+align="center"> ![Untitled Diagram drawio](https://user-images.githubusercontent.com/54971670/147419911-ddec0252-2cf4-4912-b886-a2e4b22562b2.png) </div>
  
 - Eğer DOM (Document Object Model) üzerindeki verilerden bir tanesi bile değişirse DOM tekrardan render edilir. (`watch & update`)
 - Sayfamızda iki ayrı counter (sayaç) varken sadece birinde arttır dememiz (değeri güncellememiz) diğer sayacın da tekrar render edilmesine neden olur.
