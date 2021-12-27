@@ -30,9 +30,6 @@
 ![Untitled Diagram drawio](https://user-images.githubusercontent.com/54971670/147419911-ddec0252-2cf4-4912-b886-a2e4b22562b2.png)
  
 
- ![Untitled Diagram drawio](https://user-images.githubusercontent.com/54971670/147419911-ddec0252-2cf4-4912-b886-a2e4b22562b2.png)
-
-
 - Eğer DOM (Document Object Model) üzerindeki verilerden bir tanesi bile değişirse DOM tekrardan render edilir. (`watch & update`)
 
 - Sayfamızda iki ayrı counter (sayaç) varken sadece birinde arttır dememiz (değeri güncellememiz) diğer sayacın da tekrar render edilmesine neden olur.
