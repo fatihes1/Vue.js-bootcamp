@@ -1,4 +1,4 @@
-﻿# Bölüm02 : # Component Nedir? Componentler Arası İletişim, Vue CLI
+﻿# Bölüm02 : Component Nedir? Componentler Arası İletişim, Vue CLI
 
 ## :pushpin: Parçala ve Fethet Yöntemi Nedir?
 Parçala ve fethet (_divide and conquer_), problemi daha küçük alt problemlere (_sub-problems_) ayırıp (parçalama), her alt problemin çözülmesine ve daha sonra bütün çözümlerin birleştirilmesine dayanır.
