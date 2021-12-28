@@ -15,7 +15,7 @@
  - [ ] Bölümler ve içerisindeki dosyalara dair açıklama gelecek.
 
 ## :clipboard: Notlar 
-### :books: Microsoft Learn Vue Bölümü Genel Notlar
+### :books: Microsoft Learn Vue Learn Path Genel Notlar
 - Vue.js işleme sırasında sayfanın sırası önemlidir. `HTML` sayfası tamamen yüklenene kadar **document object model**'ine (**DOM**) uygulamanızı ekleyemezsiniz. Bu nedenle, diğer tüm HTML öğeleri tarayıcıya yüklendikten sonra sayfanın en altında Vue uygulamasını (CDN) içeri aktarın. DOM'un içeriğini veya yapısını değiştirmeyi amaçlayan harici bir komut dosyasını çağırmadan önce HTML sayfasının yüklenmesine izin vermek genellikle daha iyi bir fikirdir.
 
 - Javascript adlandırma kuralları, sınıf (`class`) nesnelerine uygulanır. Bu nedenle, sınıf adında kısa çizgi kullanılıyor ise, özelliği eklerken tırnak içinde tanımlamak ve kullanmak gerekir. Örneğin `data()` içerisinde tanımlanan bir css değerini `"center-text" : true` şekline CSS sınıf adı tırnak içininde olacak şekilde tanımlamak gerekir.
