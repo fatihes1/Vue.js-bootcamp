@@ -1,4 +1,4 @@
-﻿# Bölüm01 : # Vue.js Nedir? DOM, Event, Attribute Binding, VDom, Style, Koşullar, Döngüler
+﻿# Bölüm01 : Vue.js Nedir? DOM, Event, Attribute Binding, VDom, Style, Koşullar, Döngüler
 
 ## :pushpin: Vue.js Nedir?
 - Vue.js (Kısaca Vue) bir `JavaScript` Framework'üdür.
