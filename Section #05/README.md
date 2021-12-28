@@ -1,4 +1,4 @@
-﻿# Bölüm05 : Vue3 ile Routing Yapımı, Vue-Router Kullanımı
+﻿# Bölüm05 : Vue.js v3 ile Routing Yapımı, Vue-Router Kullanımı
 
 ## :clipboard: Notlar 
 - Birden fazla sayfa içeren projelerde sayfalar arası geçiş için kullanılan paket **vue-router**'dır.
