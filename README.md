@@ -12,7 +12,7 @@
 
 ## :mag_right: İçerik
 
- - [Bölüm1](/Section #01)
+ - [Bölüm01 : Vue.js Nedir? DOM, Event, Attribute Binding, VDom, Style, Koşullar, Döngüler](https://github.com/fatihes1/Vue.js-bootcamp/tree/main/Section%20%2301)
  
  - [ ] Bölümler ve içerisindeki dosyalara dair açıklama gelecek.
 
