@@ -21,13 +21,17 @@ Bookmark App kullanıcıların bulduğu faydalı URL'leri kategorize ederek payl
 
 ## :framed_picture: Proje Görselleri
 Projenin genel görünümü ve kullanıcılar tarafından oluşturulmuş bookmark'lar bu şekilde görünmektedir. Sol kısımdaki kategorilere tıklayarak filtreleme yapılmış şekilde görünür.
+
 ![bir](https://user-images.githubusercontent.com/54971670/147669729-569550a1-e128-48bb-976e-83538f43db38.PNG)
 
 Uygulamaya giriş yapma sayfası aşağıda göründüğü gibidir.
+
 ![dort](https://user-images.githubusercontent.com/54971670/147669732-8ecdcbe8-ff10-457c-b489-08c01d494491.PNG)
 
 Sağ üstte bulunan drop-down (açılır) menüde aşağıdaki gibi seçenekler sunulmaktadır.
+
 ![iki](https://user-images.githubusercontent.com/54971670/147669735-9e3acc40-07ee-4c47-ab45-4b8adb3d0ba5.PNG)
 
 Sağ üstte yeni ekle dedikten sonra gelen ekran aşağıdaki gibidir. Bookmark adı, URL, kategori ve açıklama eklenebilir. Açıklama ilk görselde listenen bookmark'ların en sağında yer alan açıklama butonun üzerine gelindiğinde otomatik olarak görünmektedir.
+
 ![üc](https://user-images.githubusercontent.com/54971670/147669736-b3e8d7b8-b16a-4164-8420-bd03cd3682ce.PNG)
