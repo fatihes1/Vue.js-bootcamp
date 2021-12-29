@@ -1,5 +1,13 @@
 ﻿# Bölüm06 : Bookmark App
 
+![](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![](https://img.shields.io/badge/Socket.io-010101?&style=for-the-badge&logo=Socket.io&logoColor=white)
+![](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D)
+![](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+
+
 ## :bookmark_tabs: Bookmark App Nedir?
 Bookmark App kullanıcıların bulduğu faydalı URL'leri kategorize ederek paylaştığı. Diğer kullanıcıların ise eklenilen bookmark'ları görüp isterse beğenip sonrasında beğendiği bookmarkları görebildiği isterlerse bookmarked yapıp kendilerince düzenleyebildiği bir real-time web uygulamasıdır.
 
