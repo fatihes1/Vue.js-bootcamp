@@ -12,7 +12,8 @@
 
 ## :mag_right: İçerik
 
-
+ - [Bölüm1](/Section #01)
+ 
  - [ ] Bölümler ve içerisindeki dosyalara dair açıklama gelecek.
 
 ## :clipboard: Notlar 
