@@ -56,11 +56,9 @@ kurulumu yapılır ve sonrasında ise projeyi oluşturmak istenilen dizine gitti
 
 - Örneğin child component içerisinde `<template>` tagleri arasında tanımlı bir butona `@click = "sendData` işlevi atadığımızı düşünelim ve `<script>` tagleri içerisinde tanımlanabilecek `methods : { ... }` içerisinde `sendData() { this.$emit('test-event') }` tanımlaması yapalım. Parent component içerisinde child component'in çağrıldığı (`<template>`) taginde `@test-event="testEvent"` eklemesi yapalım ve sonrasında yine parent component'in `methods` alanında `testEvent() { alert() } ` tanımlaması yaptığımızı var sayalım. Bu işlemleri yaparsak child component içerisinde tanımlı olan butona bastığımızda tarayıcı penceresinde `alert` yani uyarı görüntülenecektir. Veri iletimi gerektiğinde ise parent component içerisinde tanımlanan method'un parentez içerisine parametre olarak bir veri beklediğini gösterebiliriz. Böylelikle child component üzerinde emit gönderilirken bir veri ile gönderilir.
 
-<p align="center">
- 
+
 ![Untitled Diagram drawio (1)](https://user-images.githubusercontent.com/54971670/147474024-ad0d2b9c-a902-4430-80e1-8db3fc73b6a1.png)
 
-</p>
 
 - İçeriden dışarıya doğru sırayla A, B ve C comonentlerimiz olduğunu varsayalım. (Yukarıdaki göreseldeki gibi.)  A component'i içerisindeki bir veriyi C (bu durumda parent comp.) component'ine nasıl aktarırız?
 -- A component'i `(A.vue)` içerisindeki to-do silmek üzere atanan buton tagine`@click="$emit('delete-todo-item', item)"` eklemesi yaparız. Böylelikle veri B component'ine gitmiş olur.
